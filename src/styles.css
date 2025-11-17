@@ -8,8 +8,8 @@ h1 {
   text-align: center;
 }
 
-#payment-widget-container {
-  max-width: 400px;
+.bd-example {
+  max-width: 600px;
   margin: 20px auto;
   padding: 15px;
   background: #fff;
@@ -17,51 +17,35 @@ h1 {
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
-.payment-icons {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 15px;
-}
-
-.payment-icons img {
-  width: 50px;
-  height: auto;
-  filter: grayscale(100%);
-  transition: filter 0.3s ease;
-}
-
-.payment-icons img.active {
-  filter: none;
-}
-
-.card-input {
-  display: flex;
-  gap: 10px;
-  margin-bottom: 15px;
-}
-
-#cardNumber {
-  flex: 1;
-  padding: 8px;
-  font-size: 16px;
-}
-
-#validateBtn {
+.btn {
   padding: 8px 12px;
   font-size: 16px;
   cursor: pointer;
-  background-color: #007bff;
+  background-color: #ff0037e5;
   color: white;
   border: none;
   border-radius: 4px;
 }
 
-#validateBtn:hover {
-  background-color: #0056b3;
+.btn:hover {
+  background-color: #bb042bfa;
 }
 
-.validation-result {
-  text-align: center;
+.form-popup-header {
+  position: absolute;
+  padding: 8px 12px;
+  width: 200px;
+  background: #ccc;
   font-weight: bold;
-  font-size: 14px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.form-popup {
+  position: absolute;
+  padding: 8px 12px;
+  width: 200px;
+  background: #fff;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  z-index: 999;
 }
